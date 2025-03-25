@@ -1,0 +1,480 @@
+/* page1.component.css */
+
+/* Basic rule for the body for a responsive background */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #030303;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-family: monospace;
+}
+
+.hero-title {
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  max-width: min(900px, 90%);
+  margin: 0 0 2rem;
+  line-height: 1.2;
+}
+
+.input-container {
+  position: relative;
+  margin: 2rem 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  padding: 5px;
+  display: flex;
+  width: min(400px, 90%);
+  flex-wrap: wrap;
+}
+
+.input-container input {
+  flex: 1;
+  min-width: 200px;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-container button {
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-text {
+  margin-top: 2rem;
+  font-size: clamp(0.9rem, 3vw, 1.2rem);
+}
+
+.service-card {
+  background: #1a1a1a;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: left;
+  position: relative;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card.light {
+  background-color: white;
+  color: black;
+}
+
+.service-card.dark {
+  background-color: #121212;
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.service-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.service-description {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: auto;
+}
+
+.see-more-btn {
+  margin-top: 2rem;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.service-card.light .see-more-btn {
+  background: #111;
+  color: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .service-card {
+    padding: 1.5rem; /* Reduces padding on medium screens */
+  }
+  .hero-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem); /* Adjust hero title for better readability */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .service-card {
+    padding: 1rem; /* Reduce card padding on smaller screens */
+  }
+  .service-description {
+    font-size: 1.5rem; /* Smaller font size for descriptions */
+  }
+  .see-more-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem; /* Smaller button size */
+  }
+  .hero-title {
+    font-size: clamp(1.5rem, 5vw, 2rem); /* Smaller hero title */
+  }
+  .input-container {
+    width: 90%; /* Make input container full width on small screens */
+    padding: 10px;
+  }
+  .footer-text {
+    font-size: 1rem; /* Adjust footer text size */
+  }
+}
+
+/* Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.6rem; /* Hero title smaller */
+  }
+  .footer-text {
+    font-size: 0.9rem;
+  }
+  .input-container input {
+    padding: 10px; /* Adjust padding */
+  }
+  .service-description {
+    font-size: 1.4rem; /* Further reduce description font size */
+  }
+  .service-card {
+    padding: 0.8rem; /* Further reduce padding */
+  }
+  .see-more-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Project Management Styles */
+.project-management {
+  background-color: #1a2c34;
+  color: white;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+}
+
+.subheader {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  color: #a0a0a0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.service-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-box h3 {
+  font-family: monospace;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.service-box p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.contact-section {
+  margin-top: 4rem;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  margin-bottom: 2rem;
+  line-height: 1.4;
+}
+
+.contact-content p {
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+}
+
+.contact-btn {
+  background: white;
+  color: #1a2c34;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  background-color: #f0f0f0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .services-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .service-box {
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-management {
+    padding: 2rem 1rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 2rem;
+  }
+  
+  .service-box {
+    padding: 1.5rem;
+  }
+  
+  .contact-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+}
+/* Partner Section Styles */
+.partner-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #0a1920;
+  color: white;
+}
+
+.mono-text {
+  font-family: monospace;
+  color: #a0a0a0;
+  margin-bottom: 1.5rem;
+}
+
+.main-heading {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  line-height: 1.2;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  text-align: left;
+  padding: 2rem;
+}
+
+.feature-label {
+  font-family: monospace;
+  color: #a0a0a0;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.feature-description {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+/* page1.component.css */
+.subscription-container {
+  background-color: #0a1920;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.subscription-header {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.mono-text {
+  font-family: monospace;
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.main-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.description {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.subscription-card {
+  background-color: #1d3d4a;
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.card-label {
+  font-family: monospace;
+  color: #a0a0a0;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  text-transform: lowercase;
+}
+
+.card-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.card-description {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.see-more-btn {
+  background-color: white;
+  color: #1d3d4a;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.see-more-btn:hover {
+  transform: translateY(-2px);
+}
+
+.trust-text {
+  font-family: monospace;
+  color: #a0a0a0;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .subscription-container {
+    padding: 2rem 1rem;
+  }
+  
+  .subscription-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+  }
+}

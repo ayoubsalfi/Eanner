@@ -1,0 +1,339 @@
+/* Section About */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #0a0f13;
+    color: white;
+    padding: 50px 20px;
+}
+
+.about-section .content {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.about-section h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.about-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.about-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.about-section p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.about-section .image-container {
+    max-width: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.about-section .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Section Vision & Mission */
+.vision-mission-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    background-color: #0a0f13;
+    color: white;
+    padding: 50px 20px;
+    gap: 50px;
+    width: 100%;
+}
+
+.vision, .mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vision .text-content, .mission .text-content {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.vision h5, .mission h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.vision h1, .mission h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.vision p, .mission p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    min-width: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.mission {
+    flex-direction: row-reverse;
+}
+
+/* 🔹 RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+    .vision, .mission {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section h1, .vision h1, .mission h1 {
+        font-size: 24px;
+    }
+
+    .about-section h2 {
+        font-size: 20px;
+    }
+
+    .about-section p, .vision p, .mission p {
+        font-size: 16px;
+    }
+
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section h1, .vision h1, .mission h1 {
+        font-size: 20px;
+    }
+
+    .about-section h2 {
+        font-size: 18px;
+    }
+
+    .about-section p, .vision p, .mission p {
+        font-size: 14px;
+    }
+}
+.careers-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a2435;
+    color: white;
+    padding: 60px 20px;
+    gap: 40px;
+}
+
+.careers-section .content {
+    flex: 1;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.careers-section h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.careers-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.careers-section p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.view-positions {
+    background-color: white;
+    color: #0a2435;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-positions:hover {
+    background-color: #f0f0f0;
+}
+
+.careers-section .image-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.careers-section .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Overview Section */
+.overview-section {
+    background-color: #0a0f13;
+    color: white;
+    padding: 40px 20px;
+}
+
+.overview-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.overview-item:last-child {
+    border-bottom: none;
+}
+
+.overview-content {
+    flex: 1;
+}
+
+.overview-content h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.overview-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.overview-content p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.download-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.download-link:hover {
+    opacity: 1;
+}
+
+.arrow-icon {
+    margin-left: 20px;
+}
+
+.arrow-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .careers-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .careers-section .content {
+        max-width: 100%;
+    }
+
+    .careers-section .image-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .careers-section h1 {
+        font-size: 28px;
+    }
+
+    .careers-section p {
+        font-size: 16px;
+    }
+
+    .overview-content h2 {
+        font-size: 20px;
+    }
+
+    .overview-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .careers-section {
+        padding: 40px 15px;
+    }
+
+    .view-positions {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

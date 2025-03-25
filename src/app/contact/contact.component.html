@@ -1,0 +1,84 @@
+<div class="contact-container">
+    <!-- Header Section -->
+    <section class="header-section">
+      <span class="section-label">Contact</span>
+      <h1 class="main-title">Get In Touch</h1>
+      <p class="subtitle">Get in touch with Eaneer for all your electrical needs. Let's spark innovation together!</p>
+      <p class="reach-out">Reach out today.</p>
+    </section>
+  
+    <!-- Main Content -->
+    <div class="content-wrapper">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+        <p class="info-text">
+          Contact Eaneer for any inquiries, quotes, or collaboration requests. Our team is available to answer your questions and assist you with your electrical projects.
+        </p>
+  
+        <div class="contact-details">
+          <div class="detail-item">
+            <i class="location-icon"></i>
+            <div>
+              <h3>Address</h3>
+              <p>Technopark, casablanca</p>
+            </div>
+          </div>
+  
+          <div class="detail-item">
+            <i class="phone-icon"></i>
+            <div>
+              <h3>Phone Number</h3>
+              <p>00212770181715</p>
+            </div>
+          </div>
+  
+          <div class="detail-item">
+            <i class="email-icon"></i>
+            <div>
+              <h3>E-mail</h3>
+              <p>contact&#64;eaneer.com</p>
+            </div>
+          </div>
+        </div>
+  
+        <p class="footer-text">We Can Help You Achieve Your Energy And Electricity Goals.</p>
+  
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/eaneer/posts/?feedView=all" class="social-icon linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://web.facebook.com/eaneer" class="social-icon facebook" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/eaneercorp/" class="social-icon instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-icon tiktok" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send A Message</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <input type="text" formControlName="name" placeholder="Name" class="form-input">
+          </div>
+  
+          <div class="form-group">
+            <input type="email" formControlName="email" placeholder="E-Mail Adresse" class="form-input">
+          </div>
+  
+          <div class="form-group">
+            <textarea formControlName="message" placeholder="Message" class="form-input textarea"></textarea>
+          </div>
+  
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>

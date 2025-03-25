@@ -1,0 +1,213 @@
+.contact-container {
+    background-color: #001219;
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .header-section {
+    text-align: center;
+    margin-bottom: 4rem;
+    
+    .section-label {
+      color: #a0aec0;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  
+    .main-title {
+      font-size: 3rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+  
+    .subtitle {
+      color: #cbd5e0;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .reach-out {
+      color: #cbd5e0;
+      font-size: 1.1rem;
+    }
+  }
+  
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .contact-info {
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .info-text {
+      color: #cbd5e0;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .contact-details {
+    margin: 2rem 0;
+  
+    .detail-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+  
+      i {
+        width: 24px;
+        height: 24px;
+        margin-right: 1rem;
+        background-color: white;
+      }
+  
+      h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      p {
+        color: #cbd5e0;
+      }
+    }
+  }
+  
+  .footer-text {
+    color: #cbd5e0;
+    margin: 2rem 0;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  
+    .social-icon {
+      width: 32px;
+      height: 32px;
+      background-color: white;
+      border-radius: 50%;
+      transition: opacity 0.3s;
+  
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  .contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #1a2634;
+  
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+  
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+  
+    .form-input {
+      width: 100%;
+      padding: 0.8rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+  
+      &.textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+  
+      &:focus {
+        outline: none;
+        border-color: #4299e1;
+      }
+    }
+  
+    .submit-btn {
+      background-color: #1a2634;
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #2d3748;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .header-section {
+      .main-title {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      color: white;
+      text-decoration: none;
+  
+      i {
+        font-size: 20px;
+      }
+  
+      &.linkedin:hover {
+        background-color: #0077b5;
+      }
+  
+      &.facebook:hover {
+        background-color: #1877f2;
+      }
+  
+      &.instagram:hover {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      }
+  
+      &.tiktok:hover {
+        background-color: #000000;
+        .fa-tiktok {
+          color: #ff0050;
+        }
+      }
+  
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }

@@ -1,0 +1,246 @@
+.strategy-container {
+    background-color: #001219;
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.strategy-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.strategy-label {
+    color: #a0aec0;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.strategy-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.strategy-subtitle {
+    color: #cbd5e0;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.handshake-image {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.handshake-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.pre-title {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Benefits Grid Styles */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.benefit-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.benefit-card h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.benefit-card p {
+    color: #cbd5e0;
+    line-height: 1.6;
+}
+
+/* Partner Programs Styles */
+.partner-programs {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.programs-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.program-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(10px);
+}
+
+.program-card h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.program-card p {
+    color: #cbd5e0;
+    line-height: 1.6;
+}
+
+.closing-text {
+    color: #cbd5e0;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefits-grid,
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .strategy-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+:host {
+    display: block;
+  }
+  
+  .bg-dark {
+    background-color: #001219;
+  }
+  
+  .tabs-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+  
+  .tab-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  
+    &.active {
+      background: #1c3d3a;
+      border-color: #1c3d3a;
+    }
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .content-card {
+    background-color: #1c3d3a;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    
+    h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+  
+    .subtitle {
+      color: #cbd5e0;
+      margin-bottom: 1rem;
+    }
+  
+    .description {
+      color: #94a3b8;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+  
+    &.creative-element {
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  
+    &.white-card {
+      background-color: white;
+      
+      h3 {
+        color: black;
+      }
+    }
+  
+    &.integration-card {
+      background-color: #1c3d3a;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .tabs-nav {
+      flex-direction: column;
+      align-items: stretch;
+      
+      .tab-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+}

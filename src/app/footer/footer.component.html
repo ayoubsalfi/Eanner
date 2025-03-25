@@ -1,0 +1,88 @@
+<!-- contact.component.html -->
+<div class="contact-card">
+    <div class="contact-content">
+      <div class="contact-text">
+        <p class="contact-label">Contact Us Today</p>
+        <h2 class="contact-title">Have questions about our services or ready to start your project?</h2>
+      </div>
+      <div class="contact-form">
+        <input 
+          type="email" 
+          placeholder="Type Your Email"
+          class="email-input">
+        <button class="submit-button">Get Started</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- footer.component.html -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Logo and Description -->
+      <div class="footer-brand">
+        <img src="assets/eanner.jpg" alt="Eaneer Logo" class="footer-logo">
+        <div class="footer-description">
+          <h3>Contact Eaneer for the Energy Future</h3>
+          <p>Contact Eaneer for Innovative Energy Solutions.</p>
+          <p>Transform Your Vision into Reality with Speed, Efficiency and Savings.</p>
+        </div>
+      </div>
+  
+      <!-- Navigation Links -->
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Home</h4>
+          <ul>
+            <li><a routerLink="/about">About Us</a></li>
+            <li><a routerLink="/technologies">Technologies</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-column">
+          <h4>Industry</h4>
+          <ul>
+            <li><a routerLink="/industrial">Industrial</a></li>
+            <li><a routerLink="/agriculture">Agriculture</a></li>
+            <li><a routerLink="/building">Building</a></li>
+            <li><a routerLink="/security">Security</a></li>
+            <li><a routerLink="/energy">Energy</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-column">
+          <h4>Investors</h4>
+          <ul>
+            <li><a routerLink="/projects">Projects</a></li>
+            <li><a routerLink="/finance">Finance</a></li>
+            <li><a routerLink="/statement">Statement</a></li>
+            <li><a routerLink="/projections">Projections</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a routerLink="/purpose">Purpose</a></li>
+            <li><a routerLink="/innovation">Innovation</a></li>
+            <li><a routerLink="/partners">Partners</a></li>
+            <li><a routerLink="/carrier">Carrier</a></li>
+            <li><a routerLink="/affiliate">Affiliate</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-links">
+        <a routerLink="/privacy">Privacy Policy</a>
+        <a routerLink="/terms">Term Of Service</a>
+        <a routerLink="/accessibility">Accessibility</a>
+        <a routerLink="/contact">Contact</a>
+        <a routerLink="/logo">Logo</a>
+      </div>
+      <div class="copyright">
+        {{currentYear}} eaneer .all right reserved
+      </div>
+    </div>
+  </footer>

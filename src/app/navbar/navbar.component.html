@@ -1,0 +1,145 @@
+<!-- navbar.component.html -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+  <a class="navbar-brand" href="#">
+    <img src="assets/eanner.jpg" alt="Logo" class="logo">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item dropdown" (mouseover)="toggleDropdown('companyDropdown', true)" 
+          (mouseleave)="toggleDropdown('companyDropdown', false)">
+        <a class="nav-link dropdown-toggle" id="companyDropdown">Company</a>
+        <div class="dropdown-menu custom-dropdown" [ngClass]="{'show': dropdownStates['companyDropdown']}">
+          <div class="dropdown-grid">
+            <div class="dropdown-item">
+              <a href="/about-us"><h6>About Us</h6></a>
+              <p>Learn more about eaneer, our mission, and how we're revolutionizing the electrical industry.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/purpose"><h6>Purpose</h6></a>
+              <p>Explore eaneer's purpose: creating safer, more efficient electrical solutions for a sustainable future.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/innovation"><h6>Innovation</h6></a>
+              <p>Explore the cutting-edge technologies and innovative solutions that power eaneer's success.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/technologies"><h6>Technologies</h6></a>
+              <p>Experience the latest advancements in electrical engineering and technology with eaneer's state-of-the-art solutions.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/sustainability"><h6>Sustainability</h6></a>
+              <p>Eaneer is leading the charge towards a sustainable future through eco-friendly practices, renewable energy solutions.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/strategy"><h6>Strategy</h6></a>
+              <p>Delve into eaneer's strategic approach to delivering exceptional service and value to our clients.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/contact"><h6>Contact</h6></a>
+              <p>Get in touch with eaneer's dedicated team for expert guidance, support, and collaboration.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/affiliate"><h6>Affiliate</h6></a>
+              <p>Join eaneer's affiliate program and partner with us to drive mutual growth and success.</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/partners"><h6>Partners</h6></a>
+              <p>Discover eaneer's trusted network of partners, collaborators, working together to achieve shared goals and aspirations.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown" (mouseover)="toggleDropdown('industryDropdown', true)" 
+          (mouseleave)="toggleDropdown('industryDropdown', false)">
+        <a class="nav-link dropdown-toggle" id="industryDropdown">Industry</a>
+        <div class="dropdown-menu custom-dropdown" [ngClass]="{'show': dropdownStates['industryDropdown']}">
+          <div class="dropdown-grid">
+            <div class="dropdown-item">
+              <a href="/agriculture"><h6>Agriculture</h6></a>
+              <p>Boosting yields and efficiency with smarter farm electricity</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/industrial"><h6>Industrial</h6></a>
+              <p>Reliable, robust electrical solutions for the heart of your industry</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/building"><h6>Buildings</h6></a>
+              <p>Smart and efficient electrical systems for modern buildings</p>
+            </div>
+            <div class="dropdown-item">
+              <a href="/green"><h6>Green Energy</h6></a>
+              <p>Renewable energy: The key to a greener future</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown" (mouseover)="toggleDropdown('servicesDropdown', true)" 
+          (mouseleave)="toggleDropdown('servicesDropdown', false)">
+        <a class="nav-link dropdown-toggle" id="servicesDropdown">Services</a>
+        <div class="dropdown-menu custom-dropdown" [ngClass]="{'show': dropdownStates['servicesDropdown']}">
+          <div class="dropdown-grid">
+            <div class="dropdown-item" 
+                (mouseover)="toggleSubmenu('consultingSubmenu', true)" 
+                (mouseleave)="toggleSubmenu('consultingSubmenu', false)">
+              <a href="#consulting"><h6>Construction</h6></a>
+              <div class="submenu" [ngClass]="{'show': submenuStates['consultingSubmenu']}">
+                <a href="/installation">Installation Electrique</a>
+                <a href="#installation-planning">Eclairage Interieur/Exterieur</a>
+                <a href="#power-management">Systeme de Securite</a>
+                <a href="#energy-efficiency">Entretien et Reparation</a>
+              </div>
+            </div>
+            
+            <div class="dropdown-item" 
+                (mouseover)="toggleSubmenu('installationSubmenu', true)" 
+                (mouseleave)="toggleSubmenu('installationSubmenu', false)">
+              <a href="#installation"><h6>Industrial</h6></a>
+              <div class="submenu" [ngClass]="{'show': submenuStates['installationSubmenu']}">
+                <a href="#electrical-systems">Distribution d'energy</a>
+                <a href="#lighting-installation">Automation Indistriel</a>
+                <a href="#power-distribution">Securite et Surveillance</a>
+                <a href="#industrial-equipment">Services De Maintenance</a>
+              </div>
+            </div>
+
+            <div class="dropdown-item" 
+                (mouseover)="toggleSubmenu('maintenanceSubmenu', true)" 
+                (mouseleave)="toggleSubmenu('maintenanceSubmenu', false)">
+              <a href="#maintenance"><h6>Agriculture</h6></a>
+              <div class="submenu" [ngClass]="{'show': submenuStates['maintenanceSubmenu']}">
+                <a href="#routine-checks">Pompage/Irrigation Automatique</a>
+                <a href="#preventive-maintenance">Automatisation Des Serres Agricoles</a>
+                <a href="#emergency-service">Serres Connects</a>
+                <a href="#equipment-testing">Control Des Parmetrer Agricole</a>
+              </div>
+            </div>
+
+            <div class="dropdown-item" 
+                (mouseover)="toggleSubmenu('repairSubmenu', true)" 
+                (mouseleave)="toggleSubmenu('repairSubmenu', false)">
+              <a href="#repair"><h6>Subscription</h6></a>
+              <div class="submenu" [ngClass]="{'show': submenuStates['repairSubmenu']}">
+                <a href="#emergency-repairs">eaneer shield</a>
+                <a href="#equipment-repair">eaneer solar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link" href="/carrer">Career</a></li>
+      <li class="nav-item"><a class="nav-link" href="/finance">Finance</a></li>
+      <li class="nav-item"><a class="nav-link" href="/support">Support</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+      <li class="nav-item">
+        <a class="btn btn-light rounded-pill px-3" href="#">Get Started</a>
+      </li>
+    </ul>
+  </div>
+</nav>

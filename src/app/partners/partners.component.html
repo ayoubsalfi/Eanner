@@ -1,0 +1,265 @@
+<!-- HTML -->
+<div class="strategy-container">
+    <!-- Header Section -->
+    <section class="strategy-header">
+        <div class="text-center">
+            <span class="strategy-label">Partners</span>
+            <h1 class="strategy-title">Partner With Eaneer</h1>
+            <p class="strategy-subtitle">
+                We Can Drive Innovation And Create A More Sustainable Future.
+            </p>
+        </div>
+        <div class="handshake-image">
+            <img src="assets/patner1.jpg" alt="Business handshake" />
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Header Section -->
+        <section class="header">
+            <h2 class="pre-title">Are you a business or organization looking to collaborate with a leader in sustainable energy solutions? Partner with Eaneer and together</h2>
+            <h1 class="section-title">Why Partner With Us:</h1>
+        </section>
+
+        <!-- Benefits Grid -->
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <h3>Innovative Solutions:</h3>
+                <p>Access cutting-edge technology and innovative solutions developed by Eaneer's team of experts.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Market Leadership:</h3>
+                <p>Partner with a recognized leader in the industry, trusted by clients worldwide for our quality and reliability.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Shared Values:</h3>
+                <p>Align your brand with our commitment to sustainability and environmental stewardship.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Collaborative Approach:</h3>
+                <p>Benefit from our collaborative approach to partnerships, tailored to meet your unique needs and objectives.</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Mutual Growth:</h3>
+                <p>Grow your business alongside ours, leveraging our expertise and resources to achieve mutual success.</p>
+            </div>
+        </div>
+
+        <!-- Partner Programs Section -->
+        <section class="partner-programs">
+            <h2 class="programs-title">Our Partner Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>Reseller Program</h3>
+                    <p>Join our reseller program and distribute Eaneer's products and solutions to your customers</p>
+                </div>
+                <div class="program-card">
+                    <h3>Technology Partnerships</h3>
+                    <p>Collaborate with us to integrate your technology with ours, driving innovation and enhancing product offerings.</p>
+                </div>
+                <div class="program-card">
+                    <h3>Strategic Alliances</h3>
+                    <p>Forge strategic alliances with Eaneer to explore new markets, expand your reach, and drive growth.</p>
+                </div>
+            </div>
+            <p class="closing-text">Partner with Eaneer and unlock new opportunities for growth, innovation, and success. Let's work together to build a cleaner, more sustainable future for all.</p>
+        </section>
+    </div>
+</div>
+<div class="min-h-screen bg-dark text-white p-4">
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav">
+      <button 
+        *ngFor="let tab of tabs"
+        (click)="setActiveTab(tab.id)"
+        [class.active]="activeTab === tab.id"
+        class="tab-button">
+        {{ tab.label }}
+      </button>
+    </nav>
+  
+    <!-- Architects Content -->
+    <div class="content-grid" *ngIf="activeTab === 'architects'">
+      <div class="content-card creative-element">
+        <h3>Creative Element</h3>
+        <p class="subtitle">Interactive 3D Model</p>
+        <p class="description">
+          Showcase a 3D model of a building with Eaneer's solutions integrated, allowing
+          visitors to explore different areas and see how Eaneer enhances architectural
+          design.
+        </p>
+      </div>
+  
+      <div class="content-card">
+        <h3>Innovative Solutions for Your Designs</h3>
+        <p class="description">
+          Collaborate with Eaneer to integrate cutting-edge electrical and
+          energy solutions into your architectural projects, ensuring
+          efficiency and sustainability.
+        </p>
+      </div>
+  
+      <div class="content-card white-card">
+        <h3>Why partner with eaneer</h3>
+      </div>
+  
+      <div class="content-card">
+        <h3>Enhanced Project Value</h3>
+        <p class="description">
+          Our expertise in energy efficiency and automation adds
+          significant value to your projects, making them more attractive
+          to clients.
+        </p>
+      </div>
+  
+      <div class="content-card integration-card">
+        <h3>Seamless Integration</h3>
+        <p class="description">
+          Our team works closely with architects to ensure our systems
+          seamlessly integrate into your designs, maintaining the
+          aesthetic and functional integrity of your projects.
+        </p>
+      </div>
+    </div>
+     <!-- Distruboto Content -->
+     <div class="content-grid" *ngIf="activeTab === 'distributors'">
+        <div class="content-card creative-element">
+          <h3>Creative Element</h3>
+          <p class="subtitle">Video Testimonials</p>
+          <p class="description">
+            Feature video testimonials from successful distributors explaining how partnering with Eaneer has positively impacted their business.
+          </p>
+        </div>
+    
+        <div class="content-card">
+          <h3>Expand Your Product Range</h3>
+          <p class="description">
+            By partnering with Eaneer, you can offer your clients a comprehensive range of high-demand electrical and energy solutions.
+          </p>
+        </div>
+    
+        <div class="content-card white-card">
+          <h3>Why partner with eaneer</h3>
+        </div>
+    
+        <div class="content-card">
+          <h3>Boost Your Revenue</h3>
+          <p class="description">
+            Our innovative products and services are in high demand, helping you increase your sales and revenue.
+          </p>
+        </div>
+    
+        <div class="content-card integration-card">
+          <h3>Dedicated Support</h3>
+          <p class="description">
+            Receive extensive training, marketing materials, and dedicated account management to ensure your success as an Eaneer distributor.
+          </p>
+        </div>
+      </div>
+       <!-- Contractors Content -->
+    <div class="content-grid" *ngIf="activeTab === 'contractors'">
+        <div class="content-card creative-element">
+          <h3>Creative Element</h3>
+          <p class="subtitle">Before-and-After Slideshow</p>
+          <p class="description">
+            Use a before-and-after slideshow to demonstrate the transformation of construction projects with Eaneer’s solutions.
+          </p>
+        </div>
+    
+        <div class="content-card">
+          <h3>Reliable Solutions for Your Projects</h3>
+          <p class="description">
+            Ensure your construction projects benefit from Eaneer’s reliable and efficient electrical systems and renewable energy solutions.
+          </p>
+        </div>
+    
+        <div class="content-card white-card">
+          <h3>Why partner with eaneer</h3>
+        </div>
+    
+        <div class="content-card">
+          <h3>Streamlined Project Management</h3>
+          <p class="description">
+            Our comprehensive service portfolio allows for streamlined project management, reducing downtime and increasing efficiency.
+          </p>
+        </div>
+    
+        <div class="content-card integration-card">
+          <h3>Ongoing Support</h3>
+          <p class="description">
+            Benefit from Eaneer’s ongoing support and maintenance services, ensuring the longevity and performance of the systems you install.
+          </p>
+        </div>
+      </div>
+       <!-- Enginers Content -->
+    <div class="content-grid" *ngIf="activeTab === 'engineers'">
+        <div class="content-card creative-element">
+          <h3>Creative Element</h3>
+          <p class="subtitle">Infographic</p>
+          <p class="description">
+            Create an infographic that illustrates the collaborative process between engineers and Eaneer, highlighting key benefits and successful project outcomes.
+          </p>
+        </div>
+    
+        <div class="content-card">
+          <h3>Cutting-Edge Technology</h3>
+          <p class="description">
+            Work with a partner that offers the latest in electrical and renewable energy technologies, enhancing your engineering projects.
+          </p>
+        </div>
+    
+        <div class="content-card white-card">
+          <h3>Why partner with eaneer</h3>
+        </div>
+    
+        <div class="content-card">
+          <h3>Collaborative Innovation</h3>
+          <p class="description">
+            Collaborate with Eaneer’s experts to innovate and implement advanced solutions that meet the highest standards of performance and sustainability.
+          </p>
+        </div>
+    
+        <div class="content-card integration-card">
+          <h3>Professional Growth</h3>
+          <p class="description">
+            Access training and resources to stay updated on industry trends and technologies, fostering your professional development.
+          </p>
+        </div>
+      </div>
+       <!-- Property Manager -->
+    <div class="content-grid" *ngIf="activeTab === 'property-managers'">
+        <div class="content-card creative-element">
+          <h3>Creative Element</h3>
+          <p class="subtitle">Interactive Property Map</p>
+          <p class="description">
+            Display an interactive map showing properties that have benefited from Eaneer’s solutions, with clickable pins providing more information and client testimonials
+          </p>
+        </div>
+    
+        <div class="content-card">
+          <h3>Efficient Property Management</h3>
+          <p class="description">
+            Implement Eaneer’s automation and energy efficiency solutions to streamline property management and reduce operational costs.
+          </p>
+        </div>
+    
+        <div class="content-card white-card">
+          <h3>Why partner with eaneer</h3>
+        </div>
+    
+        <div class="content-card">
+          <h3>Efficient Property Management</h3>
+          <p class="description">
+            Implement Eaneer’s automation and energy efficiency solutions to streamline property management and reduce operational costs.
+          </p>
+        </div>
+    
+        <div class="content-card integration-card">
+          <h3>Efficient Property Management</h3>
+          <p class="description">
+            Implement Eaneer’s automation and energy efficiency solutions to streamline property management and reduce operational costs.
+          </p>
+        </div>
+      </div>
+  
+    

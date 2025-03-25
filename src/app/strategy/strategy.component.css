@@ -1,0 +1,183 @@
+
+.strategy-container {
+  background-color:#001219;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.strategy-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .strategy-label {
+    color: #a0aec0;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .strategy-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+
+  .strategy-subtitle {
+    color: #cbd5e0;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .handshake-image {
+    max-width: 800px;
+    margin: 0 auto;
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.core-pillars {
+  background-color: #001219;;
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 2rem 0;
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+}
+
+.pillars-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.pillar-card {
+  background-color: #3a4756;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #cbd5e0;
+    line-height: 1.6;
+  }
+}
+
+.roadmap-section {
+  text-align: center;
+  margin-top: 3rem;
+
+  .roadmap-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .roadmap-text {
+    font-size: 1.4rem;
+    color: #cbd5e0;
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-section {
+  margin-top: 2rem;
+  
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .contact-button {
+    background-color: white;
+    color: #2d3748;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #e2e8f0;
+    }
+  }
+}
+
+.key-elements {
+  padding: 3rem 0;
+  text-align: center;
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.element-card {
+  background-color: #2d3748;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  height: 100%;
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #cbd5e0;
+    line-height: 1.6;
+  }
+}
+
+.vision-text {
+  font-size: 1.2rem;
+  color: #cbd5e0;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .strategy-container {
+    padding: 1rem;
+  }
+
+  .strategy-header {
+    .strategy-title {
+      font-size: 2rem;
+    }
+  }
+
+  .core-pillars {
+    padding: 2rem 1rem;
+  }
+
+  .pillars-container,
+  .elements-grid {
+    grid-template-columns: 1fr;
+  }
+}
