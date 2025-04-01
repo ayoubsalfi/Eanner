@@ -91,9 +91,9 @@
               <a href="#consulting"><h6>Construction</h6></a>
               <div class="submenu" [ngClass]="{'show': submenuStates['consultingSubmenu']}">
                 <a href="/installation">Installation Electrique</a>
-                <a href="#installation-planning">Eclairage Interieur/Exterieur</a>
-                <a href="#power-management">Systeme de Securite</a>
-                <a href="#energy-efficiency">Entretien et Reparation</a>
+                <a href="/eclairage">Eclairage Interieur/Exterieur</a>
+                <a href="/securite">Systeme de Securite</a>
+                <a href="/entretien">Entretien et Reparation</a>
               </div>
             </div>
             
@@ -102,10 +102,10 @@
                 (mouseleave)="toggleSubmenu('installationSubmenu', false)">
               <a href="#installation"><h6>Industrial</h6></a>
               <div class="submenu" [ngClass]="{'show': submenuStates['installationSubmenu']}">
-                <a href="#electrical-systems">Distribution d'energy</a>
-                <a href="#lighting-installation">Automation Indistriel</a>
-                <a href="#power-distribution">Securite et Surveillance</a>
-                <a href="#industrial-equipment">Services De Maintenance</a>
+                <a href="/distribution">Distribution d'energy</a>
+                <a href="/automation">Automation Indistriel</a>
+                <a href="/surveillance">Securite et Surveillance</a>
+                <a href="/maintenance">Services De Maintenance</a>
               </div>
             </div>
 
@@ -114,10 +114,10 @@
                 (mouseleave)="toggleSubmenu('maintenanceSubmenu', false)">
               <a href="#maintenance"><h6>Agriculture</h6></a>
               <div class="submenu" [ngClass]="{'show': submenuStates['maintenanceSubmenu']}">
-                <a href="#routine-checks">Pompage/Irrigation Automatique</a>
-                <a href="#preventive-maintenance">Automatisation Des Serres Agricoles</a>
-                <a href="#emergency-service">Serres Connects</a>
-                <a href="#equipment-testing">Control Des Parmetrer Agricole</a>
+                <a href="/pompage">Pompage/Irrigation Automatique</a>
+                <a href="/pompage">Automatisation Des Serres Agricoles</a>
+                <a href="/pompage">Serres Connects</a>
+                <a href="/pompage">Control Des Parmetrer Agricole</a>
               </div>
             </div>
 
@@ -126,8 +126,8 @@
                 (mouseleave)="toggleSubmenu('repairSubmenu', false)">
               <a href="#repair"><h6>Subscription</h6></a>
               <div class="submenu" [ngClass]="{'show': submenuStates['repairSubmenu']}">
-                <a href="#emergency-repairs">eaneer shield</a>
-                <a href="#equipment-repair">eaneer solar</a>
+                <a href="/pompage">eaneer shield</a>
+                <a href="/pompage">eaneer solar</a>
               </div>
             </div>
           </div>

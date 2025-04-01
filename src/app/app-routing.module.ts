@@ -18,6 +18,14 @@ import { InstallationElectriqueComponent } from './installation-electrique/insta
 import { CarrerComponent } from './carrer/carrer.component';
 import { FinanceComponent } from './finance/finance.component';
 import { SupportComponent } from './support/support.component';
+import { EclairageComponent } from './eclairage/eclairage.component';
+import { SecuriteComponent } from './securite/securite.component';
+import { EntretienComponent } from './entretien/entretien.component';
+import { DistributionComponent } from './distribution/distribution.component';
+import { AutomationComponent } from './automation/automation.component';
+import { SurveillanceComponent } from './surveillance/surveillance.component';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
+import { PompageComponent } from './pompage/pompage.component';
 
 const routes: Routes = [
   { path: '', component: Page1Component },  // Définir Page1 comme page par défaut
@@ -37,7 +45,16 @@ const routes: Routes = [
   {path:'installation',component: InstallationElectriqueComponent},
   {path:'carrer',component:CarrerComponent},
   {path:'finance',component:FinanceComponent},
-  {path:'support',component:SupportComponent}
+  {path:'support',component:SupportComponent},
+  {path:'eclairage',component:EclairageComponent},
+  {path:'securite',component:SecuriteComponent},
+  {path:'entretien',component:EntretienComponent},
+  {path:'distribution',component:DistributionComponent},
+  {path:'automation',component:AutomationComponent},
+  {path:'surveillance',component:SurveillanceComponent},
+  {path:'maintenance',component:MaintenanceComponent},
+  {path:'pompage',component:PompageComponent},
+
 ];
 
 @NgModule({

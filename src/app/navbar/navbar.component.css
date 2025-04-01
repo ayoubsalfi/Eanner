@@ -1,4 +1,7 @@
 /* navbar.component.css */
+.mg{
+  margin: 10px;
+}
 .logo {
   height: 40px;
 }

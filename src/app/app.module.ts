@@ -24,6 +24,14 @@ import { InstallationElectriqueComponent } from './installation-electrique/insta
 import { CarrerComponent } from './carrer/carrer.component';
 import { FinanceComponent } from './finance/finance.component';
 import { SupportComponent } from './support/support.component';
+import { EclairageComponent } from './eclairage/eclairage.component';
+import { SecuriteComponent } from './securite/securite.component';
+import { EntretienComponent } from './entretien/entretien.component';
+import { DistributionComponent } from './distribution/distribution.component';
+import { AutomationComponent } from './automation/automation.component';
+import { SurveillanceComponent } from './surveillance/surveillance.component';
+import { MaintenanceComponent } from './maintenance/maintenance.component';
+import { PompageComponent } from './pompage/pompage.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +55,15 @@ import { SupportComponent } from './support/support.component';
     InstallationElectriqueComponent,
     CarrerComponent,
     FinanceComponent,
-    SupportComponent
+    SupportComponent,
+    EclairageComponent,
+    SecuriteComponent,
+    EntretienComponent,
+    DistributionComponent,
+    AutomationComponent,
+    SurveillanceComponent,
+    MaintenanceComponent,
+    PompageComponent
   ],
   imports: [
     BrowserModule,

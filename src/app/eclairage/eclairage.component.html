@@ -1,0 +1,155 @@
+<!-- eclairage.component.html -->
+<div class="main-container">
+    <!-- Security Services Comparison Section -->
+    <div class="color">
+      <div class="container">
+        <div class="header">
+          <div class="title-section">
+            <p class="small-title">Security Systems</p>
+            <h1 class="main-title">eaneer construction services</h1>
+            <p class="subtitle">Security Systems Services By eaneer</p>
+          </div>
+        </div>
+      
+        <div class="content">
+          <div class="comparison-cards">
+            <!-- Left Card -->
+            <div class="card">
+              <p class="card-question">Are Your Security Systems Failing You?</p>
+              <h2 class="card-title">Before eaneer</h2>
+              
+              <div class="issue-list">
+                <div class="issue-item" *ngFor="let issue of securityIssues">
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </div>
+                  <p class="issue-text">{{ issue }}</p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Right Card -->
+            <div class="card" id="colors">
+              <p class="card-question">Experience Security Excellence</p>
+              <h2 class="card-title">With eaneer</h2>
+              
+              <div class="issue-list">
+                <div class="issue-item" *ngFor="let benefit of securityBenefits">
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                  </div>
+                  <p class="issue-text">{{ benefit }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Indoor Lighting Section -->
+    <div class="lighting-container">
+      <section class="lighting-section">
+        <div class="section-content">
+          <h2 class="section-title">Indoor Lighting Design & Installation</h2>
+          
+          <div class="section-layout">
+            <div class="section-info">
+              <p class="section-description">
+                We specialize in crafting lighting that transforms your interior environment—creating a welcoming, productive, or relaxing ambiance.
+              </p>
+              
+              <div class="features-list">
+                <div class="feature-item" *ngFor="let feature of indoorFeatures">
+                  <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h3 class="feature-title">{{feature.title}}</h3>
+                    <p class="feature-description">{{feature.description}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="section-image">
+              <img src="assets/eclairage1.jpg" alt="Indoor lighting design with pendant lamps" />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Outdoor Lighting Section -->
+      <section class="lighting-section dark-bg">
+        <div class="section-content">
+          <h2 class="section-title">Outdoor Lighting Solutions</h2>
+          
+          <div class="section-layout reverse">
+            <div class="section-image">
+              <img src="assets/eclairage2.jpg" alt="Modern building with outdoor lighting" />
+            </div>
+            
+            <div class="section-info">
+              <p class="section-description">
+                We specialize in crafting lighting that transforms your exterior environment—creating a welcoming, productive, or relaxing ambiance.
+              </p>
+              
+              <div class="features-list">
+                <div class="feature-item" *ngFor="let feature of outdoorFeatures">
+                  <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </div>
+                  <div class="feature-content">
+                    <h3 class="feature-title">{{feature.title}}</h3>
+                    <p class="feature-description">{{feature.description}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <!-- Why Choose eaneer Section -->
+    <section class="security-section">
+      <div class="security-container">
+        <h2 class="section-title">Why Choose eaneer for Your Security Systems?</h2>
+        
+        <div class="security-content">
+          <div class="security-features">
+            <div class="feature-card" *ngFor="let feature of securityFeatures">
+              <div class="feature-content">
+                <h3 class="feature-title">{{feature.title}}</h3>
+                <p class="feature-description">{{feature.description}}</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="security-image">
+            <img src="assets/eclairage3.jpg" alt="Security systems with stained glass design" />
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer with Lightning Icon -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </div>
