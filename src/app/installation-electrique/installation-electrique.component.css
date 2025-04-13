@@ -9,7 +9,7 @@
 }
 
 #colors {
-  background-color: #003319;
+  background-color: #01160c;
 }
 
 .container {
@@ -242,12 +242,12 @@
   .benefits-container {
     flex-direction: column-reverse;
   }
-  
+
   .benefits-image {
     width: 100%;
     margin-bottom: 2rem;
   }
-  
+
   .benefit-item:hover {
     transform: translateY(-5px);
   }
@@ -257,15 +257,15 @@
   .comparison-cards {
     flex-direction: column;
   }
-  
+
   .card {
     width: 100%;
   }
-  
+
   .features-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .main-title {
     font-size: 1.5rem;
   }

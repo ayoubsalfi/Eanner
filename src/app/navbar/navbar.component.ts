@@ -1,25 +1,38 @@
-// navbar.component.ts
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   dropdownStates: { [key: string]: boolean } = {};
   submenuStates: { [key: string]: boolean } = {};
 
-  constructor() {
-    this.dropdownStates = {};
-    this.submenuStates = {};
+  constructor() { }
+
+  ngOnInit(): void {
+    // Initialize dropdown states
+    this.dropdownStates = {
+      'companyDropdown': false,
+      'industryDropdown': false,
+      'servicesDropdown': false
+    };
+
+    // Initialize submenu states
+    this.submenuStates = {
+      'consultingSubmenu': false,
+      'installationSubmenu': false,
+      'maintenanceSubmenu': false,
+      'repairSubmenu': false
+    };
   }
 
-  toggleDropdown(menu: string, isOpen: boolean): void {
-    this.dropdownStates = { ...this.dropdownStates, [menu]: isOpen };
+  toggleDropdown(id: string, state: boolean): void {
+    this.dropdownStates[id] = state;
   }
 
-  toggleSubmenu(submenu: string, isOpen: boolean): void {
-    this.submenuStates = { ...this.submenuStates, [submenu]: isOpen };
+  toggleSubmenu(id: string, state: boolean): void {
+    this.submenuStates[id] = state;
   }
 }

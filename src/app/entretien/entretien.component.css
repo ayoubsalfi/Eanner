@@ -3,20 +3,20 @@
     display: block;
     width: 100%;
   }
-  
+
   body {
-    background-color: #0a1015;
+    background-color: #0a1920;
     color: white;
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
   }
-  
+
   .color {
-    background-color: #0a1015;
+    background-color: #0a1920;
   }
-  
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,28 +24,28 @@
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   /* Header Styles */
   .header {
     text-align: center;
     margin-bottom: 4rem;
     padding-top: 2rem;
   }
-  
+
   .title-section {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   .small-title {
-    color: #00b359;
+    color: #107844;
     font-size: 1rem;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
   }
-  
+
   .main-title {
     color: #ffffff;
     font-size: 2.5rem;
@@ -54,13 +54,13 @@
     text-transform: uppercase;
     letter-spacing: 1px;
   }
-  
+
   .subtitle {
     color: #cccccc;
     font-size: 1.1rem;
     margin-top: 0.5rem;
   }
-  
+
   /* Card Comparison Section */
   .content {
     width: 100%;
@@ -68,7 +68,7 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .comparison-cards {
     display: flex;
     flex-wrap: wrap;
@@ -77,7 +77,7 @@
     width: 100%;
     margin-bottom: 4rem;
   }
-  
+
   .card {
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
@@ -89,24 +89,25 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   }
-  
+
   #colors {
-    background-color: #003319;
-    border: 1px solid #00b359;
+    background-color: #01160c;
+
+    border: 1px solid #03522b;
   }
-  
+
   .card-question {
-    color: #00b359;
+    color: #076335;
     font-size: 1rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
   }
-  
+
   .card-title {
     color: #ffffff;
     font-size: 1.8rem;
@@ -114,7 +115,7 @@
     margin-bottom: 2rem;
     position: relative;
   }
-  
+
   .card-title::after {
     content: '';
     position: absolute;
@@ -122,15 +123,15 @@
     bottom: -10px;
     width: 60px;
     height: 3px;
-    background-color: #00b359;
+    background-color: #054626;
   }
-  
+
   .issue-list {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
-  
+
   .issue-item {
     display: flex;
     align-items: flex-start;
@@ -138,25 +139,25 @@
     padding-bottom: 1.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   .issue-item:last-child {
     border-bottom: none;
   }
-  
+
   .icon {
     flex-shrink: 0;
     width: 28px;
     height: 28px;
-    color: #00b359;
+    color: #024423;
     margin-top: 3px;
   }
-  
+
   .issue-text {
     color: #cccccc;
     font-size: 1rem;
     margin: 0;
   }
-  
+
   /* Service Section Styles */
   .service-sections {
     width: 100%;
@@ -165,18 +166,18 @@
     gap: 6rem;
     margin-bottom: 5rem;
   }
-  
+
   .service-section {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
   }
-  
+
   .service-section.reversed {
     flex-direction: row-reverse;
   }
-  
+
   .service-image {
     flex: 1;
     border-radius: 12px;
@@ -184,23 +185,23 @@
     height: 400px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
-  
+
   .service-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease;
   }
-  
+
   .service-image:hover img {
     transform: scale(1.05);
   }
-  
+
   .service-details {
     flex: 1;
     padding: 1rem;
   }
-  
+
   .service-title {
     color: #ffffff;
     font-size: 2rem;
@@ -208,7 +209,7 @@
     position: relative;
     padding-bottom: 15px;
   }
-  
+
   .service-title::after {
     content: '';
     position: absolute;
@@ -216,22 +217,22 @@
     bottom: 0;
     width: 80px;
     height: 3px;
-    background-color: #00b359;
+    background-color: #013d1f;
   }
-  
+
   .service-description {
     color: #cccccc;
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 2rem;
   }
-  
+
   .feature-list {
     list-style-type: none;
     padding: 0;
     margin-bottom: 2.5rem;
   }
-  
+
   .feature-list li {
     display: flex;
     align-items: center;
@@ -240,7 +241,7 @@
     position: relative;
     padding-left: 1.8rem;
   }
-  
+
   .feature-list li::before {
     content: "";
     position: absolute;
@@ -249,14 +250,14 @@
     transform: translateY(-50%);
     width: 10px;
     height: 10px;
-    background-color: #00b359;
+    background-color: #024725;
     border-radius: 50%;
   }
-  
+
   .learn-more-btn {
     background-color: transparent;
-    border: 2px solid #00b359;
-    color: #00b359;
+    border: 2px solid #01351b;
+    color: #0c8a4b;
     padding: 0.9rem 2rem;
     border-radius: 6px;
     font-size: 1rem;
@@ -266,18 +267,18 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-  
+
   .learn-more-btn:hover {
-    background-color: #00b359;
+    background-color: #04773d;
     color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 179, 89, 0.3);
   }
-  
+
   .learn-more-btn:active {
     transform: translateY(-1px);
   }
-  
+
   /* Features Section */
   .container h2 {
     text-align: center;
@@ -288,7 +289,7 @@
     position: relative;
     padding-bottom: 15px;
   }
-  
+
   .container h2::after {
     content: '';
     position: absolute;
@@ -297,16 +298,16 @@
     bottom: 0;
     width: 100px;
     height: 3px;
-    background-color: #00b359;
+    background-color: #17c86f;
   }
-  
+
   .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin: 3rem 0;
   }
-  
+
   .feature-card {
     background-color: rgba(22, 27, 34, 0.7);
     padding: 2rem;
@@ -315,31 +316,31 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
   }
-  
+
   .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    border-color: #00b359;
+    border-color: #01361b;
   }
-  
+
   .feature-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #ffffff;
   }
-  
+
   .feature-card p {
     color: #cccccc;
     font-size: 1rem;
     line-height: 1.6;
   }
-  
+
   .image-container {
     margin: 4rem 0;
     text-align: center;
   }
-  
+
   .image-container img {
     max-width: 100%;
     height: auto;
@@ -347,119 +348,119 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transition: transform 0.5s ease;
   }
-  
+
   .image-container:hover img {
     transform: scale(1.02);
   }
-  
+
   /* Media Queries for Responsive Design */
   @media (max-width: 1200px) {
     .container {
       padding: 1.5rem;
     }
-    
+
     .main-title {
       font-size: 2.2rem;
     }
-  
+
     .service-image {
       height: 350px;
     }
   }
-  
+
   @media (max-width: 992px) {
     .comparison-cards {
       flex-direction: column;
     }
-    
+
     .card {
       width: 100%;
       max-width: 600px;
     }
-    
+
     .service-section,
     .service-section.reversed {
       flex-direction: column;
       gap: 2rem;
     }
-    
+
     .service-image {
       width: 100%;
     }
-    
+
     .main-title {
       font-size: 2rem;
     }
-    
+
     .small-title {
       font-size: 0.9rem;
     }
-    
+
     .subtitle {
       font-size: 1rem;
     }
   }
-  
+
   @media (max-width: 768px) {
     .header {
       margin-bottom: 3rem;
     }
-    
+
     .main-title {
       font-size: 1.8rem;
     }
-    
+
     .card-title {
       font-size: 1.5rem;
     }
-    
+
     .service-title {
       font-size: 1.7rem;
     }
-    
+
     .service-description {
       font-size: 1rem;
     }
-    
+
     .features {
       grid-template-columns: 1fr;
     }
-    
+
     .service-image {
       height: 300px;
     }
-    
+
     .container h2 {
       font-size: 1.8rem;
     }
   }
-  
+
   @media (max-width: 576px) {
     .container {
       padding: 1rem;
     }
-    
+
     .main-title {
       font-size: 1.5rem;
     }
-    
+
     .small-title {
       font-size: 0.8rem;
     }
-    
+
     .card {
       padding: 1.5rem;
     }
-    
+
     .service-title {
       font-size: 1.5rem;
     }
-    
+
     .learn-more-btn {
       padding: 0.7rem 1.5rem;
       font-size: 0.9rem;
     }
-    
+
     .service-image {
       height: 250px;
     }

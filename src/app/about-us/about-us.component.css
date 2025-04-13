@@ -1,10 +1,10 @@
-/* Section About */
+
 .about-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #0a0f13;
+    background-color: #07151a;
     color: white;
     padding: 50px 20px;
 }
@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: center;
     text-align: left;
-    background-color: #0a0f13;
+    background-color: #07151a;
     color: white;
     padding: 50px 20px;
     gap: 50px;
@@ -168,7 +168,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0a2435;
+    background-color: #011106;
     color: white;
     padding: 60px 20px;
     gap: 40px;
@@ -202,7 +202,7 @@
 
 .view-positions {
     background-color: white;
-    color: #0a2435;
+    color:#07151a;
     border: none;
     padding: 12px 24px;
     border-radius: 5px;
@@ -228,7 +228,7 @@
 
 /* Overview Section */
 .overview-section {
-    background-color: #0a0f13;
+    background-color: #07151a;
     color: white;
     padding: 40px 20px;
 }
@@ -336,4 +336,27 @@
         padding: 10px 20px;
         font-size: 14px;
     }
+}
+.careers-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0%;
+  margin-right: 0%;
+  gap: 20px; /* espace entre le texte et l'image si nécessaire */
+  background-color:#0a1920 ;
+}
+
+.careers-section .content {
+  flex: 1;
+}
+
+.careers-section .image-container {
+  flex: 1;
+}
+
+.careers-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* optionnel pour un style plus doux */
 }

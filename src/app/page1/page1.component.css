@@ -1,10 +1,9 @@
-/* page1.component.css */
 
-/* Basic rule for the body for a responsive background */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .page1-container {
@@ -13,7 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #030303;
+  background-color: #07151a;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -82,7 +81,7 @@ body {
 }
 
 .service-card.dark {
-  background-color: #121212;
+  background-color: #061f28;;
 }
 
 .service-header {
@@ -297,7 +296,7 @@ body {
   .services-container {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .service-box {
     height: 100%;
   }
@@ -307,16 +306,16 @@ body {
   .project-management {
     padding: 2rem 1rem;
   }
-  
+
   .section-title {
     font-size: clamp(1.5rem, 4vw, 2.5rem);
     margin-bottom: 2rem;
   }
-  
+
   .service-box {
     padding: 1.5rem;
   }
-  
+
   .contact-section {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -465,15 +464,15 @@ body {
   .subscription-container {
     padding: 2rem 1rem;
   }
-  
+
   .subscription-card {
     padding: 2rem 1.5rem;
   }
-  
+
   .card-title {
     font-size: 1.5rem;
   }
-  
+
   .card-description {
     font-size: 1rem;
   }

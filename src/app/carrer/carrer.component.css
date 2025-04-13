@@ -1,6 +1,6 @@
 /* Styles de base améliorés avec focus sur la lisibilité du texte */
 body {
-    background-color: #001219;
+  background-color: #0a1920;
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -17,15 +17,15 @@ body {
 }
 
 /* Amélioration de la lisibilité des textes pour toutes les sections */
-.section-title, 
-.main-title, 
-.tagline, 
-.subtitle, 
-.description, 
-.mission-statement, 
-.perks-description, 
-.value-title, 
-.value-description, 
+.section-title,
+.main-title,
+.tagline,
+.subtitle,
+.description,
+.mission-statement,
+.perks-description,
+.value-title,
+.value-description,
 .internship-description,
 .btn {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
@@ -34,7 +34,7 @@ body {
 
 /* Header Section */
 .header-section {
-    background-color: #001219;
+  background-color: #0a1920;
     color: white;
     padding: 5% 20px;
     text-align: center;
@@ -117,7 +117,7 @@ body {
 
 /* Why Work Section */
 .why-work-section {
-    background-color: #0a3141;
+  background-color: #0a1920;
     padding: 8% 20px;
 }
 
@@ -268,7 +268,7 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
-    background-color: #0d3b4f;
+    background-color: #0a1920;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -343,12 +343,12 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-    
+
     .content-container {
         gap: 30px;
         padding: 0 5%;
     }
-    
+
     .internship-container {
         padding: 30px 20px;
         margin: 0 5%;
@@ -359,7 +359,7 @@ body {
     .main-title {
         font-size: clamp(22px, 5vw, 28px);
     }
-    
+
     .join-team-section,
     .why-work-section,
     .benefits-section,
@@ -368,33 +368,33 @@ body {
     .internship-section {
         padding: 40px 15px;
     }
-    
+
     .content-container {
         flex-direction: column;
     }
-    
+
     .reverse {
         flex-direction: column;
     }
-    
+
     .text-container, .image-container {
         max-width: 100%;
     }
-    
+
     .section-title-large {
         font-size: clamp(22px, 5vw, 28px);
     }
-    
+
     .values-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .action-buttons {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    
+
     .btn {
         width: 100%;
         max-width: 250px;
@@ -422,26 +422,26 @@ body {
     .internship-section {
         padding: 30px 10px;
     }
-    
+
     .value-card {
         padding: 20px 15px;
     }
-    
+
     .internship-container {
         padding: 25px 15px;
     }
-    
+
     /* Assurer la lisibilité sur très petits écrans */
-    .section-title, 
+    .section-title,
     .subtitle {
         font-size: 16px;
     }
-    
-    .main-title, 
+
+    .main-title,
     .section-title-large {
         font-size: 24px;
     }
-    
+
     .value-title {
         font-size: 18px;
     }

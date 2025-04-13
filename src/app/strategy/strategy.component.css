@@ -1,6 +1,6 @@
 
 .strategy-container {
-  background-color:#001219;
+  background-color:#07151a;
   color: white;
   min-height: 100vh;
   padding: 2rem;
@@ -31,7 +31,7 @@
   .handshake-image {
     max-width: 800px;
     margin: 0 auto;
-    
+
     img {
       width: 100%;
       height: auto;
@@ -41,7 +41,7 @@
 }
 
 .core-pillars {
-  background-color: #001219;;
+  background-color: #07151a;;
   padding: 3rem;
   border-radius: 1rem;
   margin: 2rem 0;
@@ -66,7 +66,7 @@
 }
 
 .pillar-card {
-  background-color: #3a4756;
+  background-color: #161717;
   padding: 2rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -100,7 +100,7 @@
 
 .contact-section {
   margin-top: 2rem;
-  
+
   p {
     margin-bottom: 1rem;
   }
@@ -139,7 +139,7 @@
 }
 
 .element-card {
-  background-color: #2d3748;
+  background-color: #161717;
   padding: 2rem;
   border-radius: 0.5rem;
   height: 100%;
